@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {AuthorsComponent } from './Components/authors/authors.component'
+import {FormsModule} from '@angular/forms'
 import { AuthorsService } from './Services/authors.service';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AuthorsService } from './Services/authors.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [AuthorsService],
   bootstrap: [AppComponent]

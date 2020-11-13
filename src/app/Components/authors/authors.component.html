@@ -6,11 +6,12 @@
         {{author}}
     </li>
     </ul>
+    <input [(ngModel)]='email' (keyup.enter) ="onKeyUp()" />
     <table>
         <tr>
             <td [attr.colspan]='colSpan'>I am a Column</td>
         </tr>
     </table>
-    <button [class.disabled]='isDisabled' class='btn btn-danger'>Bootstrap Button</button>
+    <button (click)='onSave($event)' [class.disabled]='isDisabled' class='btn btn-danger'>Bootstrap Button</button>
 </div>
 
