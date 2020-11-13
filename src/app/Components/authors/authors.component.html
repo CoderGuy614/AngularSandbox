@@ -1,0 +1,16 @@
+<div>
+    <h2 [style.color]="'red'">{{title}}</h2>
+    <img [src] = 'imageUrl'>
+    <ul>
+    <li *ngFor="let author of authors">
+        {{author}}
+    </li>
+    </ul>
+    <table>
+        <tr>
+            <td [attr.colspan]='colSpan'>I am a Column</td>
+        </tr>
+    </table>
+    <button [class.disabled]='isDisabled' class='btn btn-danger'>Bootstrap Button</button>
+</div>
+
