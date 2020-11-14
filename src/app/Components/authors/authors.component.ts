@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthorsService } from 'src/app/Services/authors.service';
 
+
 @Component({
   selector: 'app-authors',
   templateUrl: './authors.component.html',
